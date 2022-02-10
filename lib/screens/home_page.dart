@@ -1,11 +1,11 @@
 // ignore_for_file: import_of_legacy_library_into_null_safe
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:led_controller/model/models.dart';
 import 'package:led_controller/screens/addnewligh.dart';
 import 'package:led_controller/utils/components.dart';
+import 'package:led_controller/utils/finder.dart';
 
 class Home extends StatefulWidget {
   Home({Key? key}) : super(key: key);
@@ -86,7 +86,7 @@ class _HomeState extends State<Home> {
                 Icons.settings,
                 color: Colors.white,
               ),
-              onPressed: () => {print("setting ")},
+              onPressed: () => {Get.to(Finder())},
             )
           ],
         ),
